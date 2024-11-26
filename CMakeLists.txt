@@ -3,4 +3,6 @@ project(examenFinalll)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(examenFinalll main.cpp)
+add_executable(examenFinalll main.cpp
+        UserManager.cpp
+        UserManager.h)
