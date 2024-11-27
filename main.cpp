@@ -10,7 +10,7 @@ void mostrarMenu() {
     cout << "4. Ver recomendaciones" << endl;
     cout << "5. Agregar usuario" << endl;
     cout << "6. Salir" << endl;
-    cout << "Seleccione una opción: ";
+    cout << "Seleccione una opcion: ";
 }
 
 int main() {
@@ -28,7 +28,7 @@ int main() {
             cout << "Has seleccionado: Agregar contenido" << endl;
             break;
         case 3:
-            cout << "Has seleccionado: Agregar interés a un usuario" << endl;
+            cout << "Has seleccionado: Agregar interes a un usuario" << endl;
             break;
         case 4:
             cout << "Has seleccionado: Ver recomendaciones" << endl;
@@ -40,7 +40,7 @@ int main() {
             cout << "Saliendo del programa..." << endl;
             break;
         default:
-            cout << "Opción no válida. Intente de nuevo." << endl;
+            cout << "Opcion no valida. Intente de nuevo." << endl;
         }
         cout << endl;
     } while (opcion != 6);
