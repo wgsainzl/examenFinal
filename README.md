@@ -2,6 +2,13 @@
 
 Este proyecto implementa un sistema modular que incluye gestión de usuarios, manipulación de gráficos y manejo de contenido, junto con un archivo de prueba para validar la funcionalidad. El proyecto está configurado para compilarse mediante CMake.
 
+#### Integrantes
+1. Guillermo Sainz
+2. Dante Guzmán
+3. Mauricicio Villallobos
+4. Patricio Blanco
+5. José Pablo López
+
 Contenido del Proyecto
 
 Archivos Principales
