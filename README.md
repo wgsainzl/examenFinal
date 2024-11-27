@@ -60,9 +60,3 @@ git checkout -b feature/nueva-funcionalidad
 
 	3.	Realiza tus modificaciones y haz un commit.
 	4.	Envía un pull request.
-
-Notas
-
-Este proyecto es parte de un examen final, por lo que las modificaciones deben respetar las especificaciones originales.
-
-Si necesitas ajustes o contenido adicional, ¡avísame!
