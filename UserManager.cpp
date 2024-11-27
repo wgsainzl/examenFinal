@@ -3,3 +3,37 @@
 //
 
 #include "UserManager.h"
+
+// Agrega un nuevo usuario
+void UserManager::addUser(const string& username) {
+    if (userInterests.find(username) == userInterests.end()) {
+        userInterests[username] = {};
+        cout << "Usuario \"" << username << "\" agregado con éxito.\n";
+    }
+    else{
+        cout << "Usuario \"" << username << "\" NO agregado.\n";
+    }
+}
+
+// Agrega un interés a un usuario
+void UserManager::addInterest(const string& username, const string& interest) {
+    auto it = userInterests.find(username);
+    if (it != userInterests.end()) {
+        it->second.insert(interest);
+        cout << "Interés \"" << interest << "\" agregado al usuario \"" << username << "\".\n";
+    } else {
+        cout << "El usuario \"" << username << "\" no existe. No se pudo agregar el interés.\n";
+    }
+}
+
+// Obtiene los intereses de un usuario
+unordered_set<string> UserManager::getInterests(const string& username) const {
+    auto it = userInterests.find(username);
+    if (it != userInterests.end()) {
+        return it->second;
+    } else {
+        cout << "El usuario \"" << username << "\" no existe.\n";
+        return {};
+    }
+}
+
