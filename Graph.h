@@ -6,20 +6,26 @@
 #include <unordered_set>
 #include <queue>
 #include <string>
+#include <algorithm> // Para std::remove
+
+using namespace std;
 
 class Graph {
 private:
-    std::unordered_map<std::string, std::vector<std::string>> adjList;
+    unordered_map<string, vector<string>> adjList;
 
 public:
     // Constructor
     Graph() {}
 
     // Método para agregar una conexión entre dos usuarios
-    void addEdge(const std::string& user1, const std::string& user2);
+    void addEdge(const string& user1, const string& user2);
 
     // Método para realizar BFS y encontrar todos los amigos de un usuario
-    std::unordered_set<std::string> bfs(const std::string& startUser);
+    unordered_set<string> bfs(const string& startUser);
+
+    // Método para eliminar una conexión entre dos usuarios
+    void removeEdge(const string& user1, const string& user2);
 };
 
 #endif // GRAPH_H
