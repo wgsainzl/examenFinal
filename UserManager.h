@@ -24,6 +24,7 @@ public:
     void addFriendship(const string& user1, const string& user2);
     unordered_set<string> getInterests(const string& username) const;
     void recommendContent(const string& username);
+    void removeUser(const string& username);
 };
 
 #endif // USERMANAGER_H

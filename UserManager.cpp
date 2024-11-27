@@ -71,3 +71,19 @@ void UserManager::recommendContent(const string& username) {
         cout << "- " << interest << " (popularidad entre amigos: " << frequency << ")\n";
     }
 }
+
+void UserManager::removeUser(const string& username){
+    if (userInterests.find(username) != userInterests.end()){
+
+    //Eliminación de amistades y nodos correspondientes
+    for(const auto& friendName : friendships.bfs(username)){
+        friendships.removeEdge(username, friendName);
+    }
+    
+    //Eliminación de intereses
+    userInterests.erase(username);
+    cout << "Usuario \"" << username << "\" eliminado con éxito.\n";
+    } else {
+        cout << "El usuario \"" << username << "\" no existe. No se pudo eliminar.\n";
+    }
+}
