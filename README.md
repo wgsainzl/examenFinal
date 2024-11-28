@@ -67,3 +67,4 @@ git checkout -b feature/nueva-funcionalidad
 
 	3.	Realiza tus modificaciones y haz un commit.
 	4.	Envía un pull request.
+## Link Video:[ https://drive.google.com/drive/folders/1KqeCoU8O2SjpeooZgAwKrZ_vzJLx0sM8?usp=sharing](https://youtu.be/dYWRytXB3nQ?si=2SQap4xdREwkawXF)
